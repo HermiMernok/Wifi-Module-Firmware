@@ -1,0 +1,7 @@
+M24LR64.c:20:9:RFID_Write_byte	40	static
+M24LR64.c:44:9:RFID_Write_4bytes	40	static
+M24LR64.c:67:9:RFID_Write_bytes	24	static
+M24LR64.c:106:9:RFID_Read_byte	40	static
+M24LR64.c:120:9:RFID_Read_bytes	40	static
+M24LR64.c:136:9:RFID_Read_UID	40	static
+M24LR64.c:152:9:RFID_Check_FieldOn	32	static

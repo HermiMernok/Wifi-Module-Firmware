@@ -1,0 +1,77 @@
+/*
+ * AT_Commands.h
+ *
+ *  Created on: 07 Dec 2018
+ *      Author: HermiduPlessis
+ */
+
+#ifndef AT_COMMANDS_H_
+#define AT_COMMANDS_H_
+
+//============ Includes =============
+//========== Public Defines =========
+
+//=== General ===
+#define AT_COMM_GEN_ATTENTION			'+AT'
+#define	AT_COMM_GEN_MANAFACTURER_ID 	'+GMI'
+#define	AT_COMM_GEN_MODEL_ID			'+GMM'
+#define AT_COMM_GEN_SOFTWARE_VER		'+GMR'
+#define AT_COMM_GEN_SERIAL				'+GSN'
+#define AT_COMM_GEN_GREETING_TEXT		'+CSGT'
+
+//=== System ===
+#define AT_COMM_SYS_STORE_CONFIG			'&W'
+#define AT_COMM_SYS_DEFAULT_CONFIG			'Z'
+#define AT_COMM_SYS_FACTORY_SETTINGS		'UFACTORY'
+#define AT_COMM_SYS_ECHO					'E'
+#define AT_COMM_SYS_ESCAPE_CHAR				'S2'
+#define AT_COMM_SYS_TERMINATION_CHAR		'S3'
+#define AT_COMM_SYS_RESP_FORMATTING_CHAR	'S4'
+#define AT_COMM_SYS_BACKSPACE_CHAR			'S5'
+#define AT_COMM_SYS_SOFTWARE_UPDATE			'+UFWUPD'
+#define AT_COMM_SYS_MODULE_SWITCH_OFF		'+CPWROFF'
+#define AT_COMM_SYS_LOCAL_ADDRESS			'+UMSM'
+#define AT_COMM_SYS_SYSTEM_STATUS			'+UMLA'
+#define AT_COMM_SYS_SETTINGS				'+UMSTAT'
+
+//=== Data Mode ===
+#define AT_COMM_DATA_MODE					'O'
+#define AT_COMM_PEER_CONNECT				'+UDCP'
+#define AT_COMM_PEER_CLOSE_CONNECTION		'+UDCPC'
+#define AT_COMM_PEER_DEFAULT_REMOTE			'+UDDRP'
+#define AT_COMM_PEER_LIST					'+UDLP'
+#define AT_COMM_SERVER_CONFIG				'+UDSC'
+#define AT_COMM_SERVER_FLAGS				'+UDSF'
+#define AT_COMM_WATCHDOG_SETTINGS			'+UDWS'
+#define AT_COMM_CONFIG						'+UDCFG'
+#define AT_COMM_PEER_CONNECTED				'+UUDPC'
+#define AT_COMM_pEER_DISCONNECTED			'+UUDPD'
+#define AT_COMM_BIND						'+UDBIND'
+#define AT_COMM_BIND_TO_CHANNEL				'+UDBINDC'
+
+//=== Bluetooth ===
+#define AT_COMM_BT_MODE_DISCOVER
+#define AT_COMM_BT_MODE_CONNECT
+#define AT_COMM_BT_MODE_PAIRING
+#define AT_COMM_BT_MODE_SECURITY
+#define AT_COMM_BT_USER_CONFIRMATION
+#define AT_COMM_BT_USER_PASSKEY_ENTRY
+#define AT_COMM_BT_OOB_TEMPORARY_KEY
+#define AT_COMM_BT_NAME_DISCOVERY
+#define AT_COMM_BT_DISCOVERY
+#define AT_COMM_BT_BOND
+#define AT_COMM_BT_UNBOND
+#define AT_COMM_BT_READ_BONDED_DEVICES
+#define AT_COMM_BT_LOCAL_NAME
+#define AT_COMM_BT_COD
+#define AT_COMM_BT_MASTER_SLAVE_ROLE
+#define AT_COMM_BT_MASTER_SLAVE_ROLE_POLICY
+#define AT_COMM_BT_GET_RSSI
+#define AT_COMM_BT_GET_LINK_QUALITY
+#define AT_COMM_BT_LOW_ENERGY_ROLE
+
+
+//========= Public Variables ========
+//========= Public Functions ========
+
+#endif /* AT_COMMANDS_H_ */

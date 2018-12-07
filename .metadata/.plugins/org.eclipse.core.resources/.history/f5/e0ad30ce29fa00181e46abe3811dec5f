@@ -1,0 +1,42 @@
+/*
+ * AT_Commands.c
+ *
+ *  Created on: 07 Dec 2018
+ *      Author: HermiduPlessis
+ */
+
+#include "AT_Commands.h"
+
+void AT_Send(uint8_t *AT_Command,uint8_t AT_Size)
+{
+
+	send_Size = AT_size+5;
+
+	uint8_t send_Array[AT_Size+5] = {0};
+
+	send_array[0] = 'A';
+	send_array[1] = 'T';
+	send_array[2] = '+';
+
+	for(uint8_t i = 0; i < AT_Size-5; i++)
+	{
+		send_Array[i+3] = AT_Command[i];
+	}
+	send_array[send_Size-3] = '/';
+	send_array[send_Size-2] = 'r';
+	send_array[send_Size-1] = '/';
+	send_array[send_Size] = 'n';
+
+	if(HAL_UART_Transmit_DMA(&huart2, (uint8_t*)send_Array, send_Size)== HAL_OK)
+	{
+
+	}
+
+}
+
+void AT_Read()
+{
+
+}
+
+
